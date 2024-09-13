@@ -8,7 +8,7 @@ const app = express();
 // Add CORS middleware
 app.use(
   cors({
-    origin: "*", // Allow all origins (you can restrict this to specific domains if needed)
+    origin: "*", 
     methods: ["GET", "POST"],
   })
 );
