@@ -4,8 +4,7 @@ import { Server } from "socket.io";
 import cors from "cors";
 
 const app = express();
-
-// Add CORS middleware
+   
 app.use(
   cors({
     origin: "*", 
@@ -21,7 +20,7 @@ const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
     origin: "*",
-    methods: ["GET", "POST"],
+    methods: ["GET", "POST" , "DELETE"],
   },
 });
 
