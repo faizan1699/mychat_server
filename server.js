@@ -25,7 +25,7 @@ const io = new Server(server, {
 });
 
 io.on("connection", (socket) => {
-  // console.log("New client connected:", socket.id);
+  // console.log("New client connected f:", socket.id);
 
   socket.on("join_room", (roomId) => {
     socket.join(roomId);
